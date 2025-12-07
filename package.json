@@ -1,0 +1,44 @@
+{
+  "name": "pitch-master",
+  "version": "1.0.0",
+  "description": "A comprehensive football analysis and comparison platform built with the MERN stack",
+  "main": "server/server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd server && npm test",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [
+    "football",
+    "soccer",
+    "analysis",
+    "team-builder",
+    "player-comparison",
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Sammy Jay <sammyjayisthename@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thetruesammyjay/pitch-master.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thetruesammyjay/pitch-master/issues"
+  },
+  "homepage": "https://github.com/thetruesammyjay/pitch-master#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
